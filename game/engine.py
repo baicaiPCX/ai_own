@@ -11,6 +11,8 @@ class Engine:
             self.GUI.back_events(self)
             self.GUI.update_frame(self.spaceships)
 
+            is_collision=self.spaceships.update_frame()
+
     def left_down(self):
         self.spaceships.left_move()
 
